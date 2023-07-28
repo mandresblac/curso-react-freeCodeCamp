@@ -1,33 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import freeCodeCampLogo from './images/freecodecamp-logo.png'
+import Boton from './components/Boton'
+import Pantalla from './components/Pantalla'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='App'>
+        <div className='freecodecamp-logo-contenedor'>
+          <img
+            className='freecodecamp-logo'
+            src={freeCodeCampLogo}
+            alt='Logo de freeCodeCamp' />
+        </div>
+
+        <div className='contenedor-calculadora'>
+          <Pantalla />
+          <div className='fila'>
+            <Boton>1</Boton>
+            <Boton>2</Boton>
+            <Boton>3</Boton>
+            <Boton>+</Boton>
+          </div>
+          <div className='fila'>
+            <Boton>4</Boton>
+            <Boton>5</Boton>
+            <Boton>6</Boton>
+            <Boton>-</Boton>
+          </div>
+          <div className='fila'>
+            <Boton>7</Boton>
+            <Boton>8</Boton>
+            <Boton>9</Boton>
+            <Boton>*</Boton>
+          </div>
+          <div className='fila'>
+            <Boton>=</Boton>
+            <Boton>0</Boton>
+            <Boton>.</Boton>
+            <Boton>/</Boton>
+          </div>
+          <div className='fila'></div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
