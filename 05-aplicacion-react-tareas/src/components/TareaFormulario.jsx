@@ -8,7 +8,7 @@ function TareaFormulario(props) {
 
   const manejarCambio = e => {
     setInput(e.target.value);
-  }
+  };
 
   const manejarEnvio = e => {
     e.preventDefault();
@@ -17,10 +17,10 @@ function TareaFormulario(props) {
       id: uuidv4(),
       texto: input,
       completada: false
-    }
+    };
 
     props.onSubmit(tareaNueva);
-  }
+  };
 
   return (
     <form 
