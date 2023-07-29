@@ -2,7 +2,7 @@
   width: 510px;
   min-height: 65px;
   background-color: #1b1b32;
-  margin: 15px 0;
+  margin: 5px 0;
   padding: 8px 15px 8px 20px;
   display: flex;
   justify-content: space-between;
@@ -10,6 +10,19 @@
   border-radius: 7px;
   border: 1px solid white;
   cursor: pointer;
+}
+
+/* Colores de fondo */
+.tarea-contenedor:nth-child(3n + 1) {
+  background-color: #1b1b32;
+}
+
+.tarea-contenedor:nth-child(3n + 2) {
+  background-color: #2a2a40;
+}
+
+.tarea-contenedor:nth-child(3n + 3) {
+  background-color: #3b3b4f;
 }
 
 /* Texto */
